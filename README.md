@@ -7,7 +7,6 @@
 <img src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge&labelColor=0b241c" />
 <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-22C55E?style=for-the-badge&labelColor=0b241c" />
 <img src="https://img.shields.io/badge/Copilot_Studio-Powered-22C55E?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0b241c" />
-<img src="https://img.shields.io/badge/PowerShell-Integrado-22C55E?style=for-the-badge&logo=powershell&logoColor=white&labelColor=0b241c" />
 
 </div>
 
@@ -32,7 +31,7 @@
 <a id="sobre-projeto"></a>
 ## 📌 Sobre o projeto
 
-A **Central de Termos Workplace** automatiza a geração de documentos de **Entrega**, **Devolução** e **Entrega/Devolução** de equipamentos utilizados pela equipe de TI.
+A **Central de Termos Workplace** automatiza a geração de documentos de **Entrega** e **Entrega/Devolução** de equipamentos utilizados pela equipe de TI.
 
 A solução é um **agente de IA construído em Microsoft Copilot Studio**, que utiliza informações corporativas e dados dos ativos para preencher automaticamente os documentos — reduzindo erros de digitação, tempo operacional e tarefas repetitivas que antes exigiam preenchimento manual.
 
@@ -56,8 +55,9 @@ A solução é um **agente de IA construído em Microsoft Copilot Studio**, que 
 | Tipo | Descrição |
 |---|---|
 | 📥 Termo de Entrega | Gerado na entrega de um equipamento ao colaborador |
-| 📤 Termo de Devolução | Gerado na devolução de um equipamento pelo colaborador |
 | 🔄 Termo de Entrega e Devolução | Gerado em cenários de troca simultânea de equipamento |
+
+> 📌 **Observação:** também é possível utilizar o Termo de Devolução, porém ele não é necessário no ambiente atual.
 
 <br/>
 
@@ -67,15 +67,13 @@ A solução é um **agente de IA construído em Microsoft Copilot Studio**, que 
 <div align="left">
 
 <img src="https://img.shields.io/badge/Microsoft_Copilot_Studio-22C55E?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0b241c" />
-<img src="https://img.shields.io/badge/PowerShell-22C55E?style=for-the-badge&logo=powershell&logoColor=white&labelColor=0b241c" />
 <img src="https://img.shields.io/badge/Windows-22C55E?style=for-the-badge&logo=windows&logoColor=white&labelColor=0b241c" />
 <img src="https://img.shields.io/badge/Integração_Corporativa-22C55E?style=for-the-badge&logo=microsoftazure&logoColor=white&labelColor=0b241c" />
 
 </div>
 
 - Microsoft Copilot Studio (motor do agente de IA)
-- PowerShell (automações e integrações complementares)
-- Integração com serviços e bases corporativas de ativos e colaboradores
+- Integração com serviços e bases corporativas de ativos e colaboradores (Work IQ)
 - Automação de processos de documentação
 
 <br/>
@@ -88,6 +86,8 @@ Solicitação
     ↓
 Identificação do tipo de termo
     ↓
+Consulta de dados do analista
+    ↓
 Consulta de dados do colaborador
     ↓
 Consulta do ativo
@@ -99,6 +99,7 @@ Geração do documento
 
 <br/>
 
+<!---
 <a id="estrutura"></a>
 ## 📂 Estrutura do repositório
 
@@ -113,7 +114,7 @@ Central-de-Termos---Workplace/
 ```
 
 > 📌 Estrutura de referência recomendada para próximas atualizações do repositório — screenshots do agente em ação e documentação detalhada do fluxo ajudam bastante quem visita o projeto pela primeira vez.
-
+-->
 <br/>
 
 <a id="objetivo"></a>
@@ -126,7 +127,7 @@ Transformar um processo operacional e repetitivo em um fluxo automatizado, confi
 <a id="status"></a>
 ## 📊 Status do projeto
 
-Em **desenvolvimento contínuo**, com evolução das automações, integrações e possibilidades de aplicação de Inteligência Artificial.
+Em **desenvolvimento contínuo**, com evolução das automações, integrações e possibilidades de aplicação direta na plataforma de gestão de ativos (no caso atual, TOPdesk).
 
 <br/>
 
@@ -135,7 +136,7 @@ Em **desenvolvimento contínuo**, com evolução das automações, integrações
 
 - [ ] Adicionar screenshots do agente em funcionamento
 - [ ] Documentar fluxo técnico de integração (Copilot Studio ↔ bases corporativas)
-- [ ] Expandir para novos tipos de documento (ex: Termo de Uso de Software)
+- [ ] Expandir para integração de API para plataforma de chamados
 - [ ] Publicar métricas de adoção via Power BI
 
 <br/>
